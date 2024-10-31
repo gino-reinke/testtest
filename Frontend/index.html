@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>DB Project 1 new</title>
+</head>
+
+<body>
+    <main>
+        <label>Name:</label>
+        <input type="text" id="name-input">
+        <button id="add-name-btn">Add Name</button>
+
+        <br><br><br>
+        <div>
+            <input placeholder="search by name" id="search-input">
+            <button id="search-btn">Search</button>
+        </div>
+        <br>
+        <div>
+            <label>First Name:</label>
+            <input type="text" id="first-name-input" placeholder="First Name">
+            <label>Last Name:</label>
+            <input type="text" id="last-name-input" placeholder="Last Name">
+            <button id="name-search-btn">Search by Name</button>
+        </div>
+        <br>
+        <div>
+            <label>User ID:</label>
+            <input type="text" id="userid-input" placeholder="User ID">
+            <button id="userid-search-btn">Search by User ID</button>
+        </div>
+        <br>
+        <div>
+            <label>Min Salary:</label>
+            <input type="number" id="min-salary-input" placeholder="Min Salary">
+            <label>Max Salary:</label>
+            <input type="number" id="max-salary-input" placeholder="Max Salary">
+            <button id="salary-search-btn">Search by Salary Range</button>
+        </div>
+        <br>
+        <div>
+            <label>Min Age:</label>
+            <input type="number" id="min-age-input" placeholder="Min Age">
+            <label>Max Age:</label>
+            <input type="number" id="max-age-input" placeholder="Max Age">
+            <button id="age-search-btn">Search by Age Range</button>
+        </div>
+        <br>
+        <div>
+            <label>User ID:</label>
+            <input type="text" id="registered-after-userid-input" placeholder="User ID">
+            <button id="registered-after-search-btn">Search Users Registered After</button>
+        </div>
+
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>UserId</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Salary</th>
+                    <th>Age</th>
+                    <th>Register Day</th>
+                    <th>Sign In Time</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label>Name:</label>
+            <input type="text" id="update-name-input">
+            <button id="update-row-btn" value="">Update</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
